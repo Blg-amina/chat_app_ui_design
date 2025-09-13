@@ -1,33 +1,22 @@
-# Force GitHub linguist to detect Flutter/Dart properly
-*.dart linguist-detectable=true
+# Force Dart for Flutter project
 *.dart linguist-language=Dart
+*.yaml linguist-language=YAML
+*.md   linguist-language=Markdown
 
-# Treat Flutter config files as Dart-related
-pubspec.yaml linguist-language=Dart
-analysis_options.yaml linguist-language=Dart
+# Ignore platform-specific code from language stats
+android/** linguist-vendored
+ios/** linguist-vendored
+windows/** linguist-vendored
+macos/** linguist-vendored
+linux/** linguist-vendored
+web/** linguist-vendored
 
-# Ignore build and generated files
-/build/ linguist-vendored
-/.dart_tool/ linguist-vendored
-/.idea/ linguist-vendored
-/.vscode/ linguist-vendored
-/.packages linguist-vendored
-/macos/ linguist-vendored
-/windows/ linguist-vendored
-/linux/ linguist-vendored
-/web/ linguist-vendored
-
-# Assets shouldn't count as code
-*.png linguist-vendored
-*.jpg linguist-vendored
-*.jpeg linguist-vendored
-*.gif linguist-vendored
-*.svg linguist-vendored
-*.json linguist-vendored
-*.mp3 linguist-vendored
-*.mp4 linguist-vendored
-*.wav linguist-vendored
-
-# Optional: force markdown and license detection
-*.md linguist-language=Markdown
-LICENSE linguist-language=Text
+# Also ignore CMake, Swift, Objective-C, C++
+*.swift linguist-vendored
+*.m linguist-vendored
+*.mm linguist-vendored
+*.h linguist-vendored
+*.cc linguist-vendored
+*.cpp linguist-vendored
+*.c linguist-vendored
+*.cmake linguist-vendored
