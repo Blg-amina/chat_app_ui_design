@@ -1,0 +1,10 @@
+# Force GitHub to detect Dart as the main language
+*.dart linguist-language=Dart
+
+# Ignore generated and platform-specific files
+android/* linguist-vendored
+ios/* linguist-vendored
+linux/* linguist-vendored
+macos/* linguist-vendored
+windows/* linguist-vendored
+web/* linguist-vendored
