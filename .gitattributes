@@ -1,10 +1,35 @@
-# Force GitHub to detect Dart as the main language
+# ===============================
+# Force GitHub Linguist detection
+# ===============================
+
+# Count all Dart files in stats (main language)
+*.dart linguist-detectable=true
 *.dart linguist-language=Dart
 
-# Ignore generated and platform-specific files
-android/* linguist-vendored
-ios/* linguist-vendored
-linux/* linguist-vendored
-macos/* linguist-vendored
-windows/* linguist-vendored
-web/* linguist-vendored
+# Ignore auto-generated / platform files from stats
+*.gradle linguist-detectable=false
+*.kt linguist-detectable=false
+*.swift linguist-detectable=false
+*.m linguist-detectable=false
+*.mm linguist-detectable=false
+*.c linguist-detectable=false
+*.cpp linguist-detectable=false
+*.cc linguist-detectable=false
+*.h linguist-detectable=false
+*.hpp linguist-detectable=false
+*.rc linguist-detectable=false
+*.plist linguist-detectable=false
+*.cmake linguist-detectable=false
+*.xml linguist-detectable=false
+*.json linguist-detectable=false
+*.lock linguist-detectable=false
+*.yaml linguist-detectable=false
+*.yml linguist-detectable=false
+
+# Ignore Flutter generated files
+*.g.dart linguist-detectable=false
+*.freezed.dart linguist-detectable=false
+
+# ===============================
+# End of Linguist config
+# ===============================
