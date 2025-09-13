@@ -1,16 +1,29 @@
-# chat_app_ui_design
+# 📱 Chat App UI Design
 
-A new Flutter project.
+A simple **Flutter** project that showcases a clean and modern **chat application user interface**.
 
-## Getting Started
+## 🚀 Features
+- Beautiful and responsive UI
+- Chat list screen
+- Chat detail screen
+- Custom colors and typography
+- Organized Flutter widgets
 
-This project is a starting point for a Flutter application.
+## 🛠️ Technologies Used
+- Flutter
+- Dart
+- Material Design
 
-A few resources to get you started if this is your first Flutter project:
+## 📸 Screenshots
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+| Home Screen | Chat Screen |
+|-------------|-------------|
+| ![Home](screenshots/home.png) | ![Chat](screenshots/chat.png) |
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 💡 Future Improvements
+- Add authentication (Firebase or other)
+- Connect to a backend for real chat
+- Dark mode support
+
+## 📬 Contact
+Created by [Belaggoun Amina](https://github.com/Blg-amina) – feel free to connect!
